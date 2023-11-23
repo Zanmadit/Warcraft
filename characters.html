@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="characters.css">
+    <link rel="icon" href="img\characters.ico">
+    <title>Characters</title>
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="navmain">
+        <img src="img/navlogo.jpg" alt="Logo">
+        <strong>Warcraft</strong>
+    </a>
+    <a href="#story">Story</a>
+    <a href="characters.html">Characters</a>
+    <a href="https://worldofmapcraft.com/">World</a>
+    <div class="dropdown">
+      <button class="dropbtn">Fractions</button>
+      <div class="dropdown-content">
+        <a href="alliance.html">Alliance</a>
+        <a href="horde.html">Horde</a>
+      </div>
+    </div>
+    <a href="#">
+        <button onclick="document.getElementById('id01').style.display='block'" class="but1">Login</button>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img/lich.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                    <button type="submit">Login</button>
+                    <br>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container1" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="logo.html" style="vertical-align: middle;">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </a>
+    </div>
+    <div class="main-title">
+        <h1>Main characters</h1>
+    </div>
+      <div class="container custom-container">
+        <div class="row">
+          <div class="col-md-6 custom-column">
+            <img src="img/arthas.jpg" alt="Image 1" class="custom-image">
+              <div class="custom-text">
+                <h1>Arthas Menethil</h1>
+                <p>
+                    prominent character in the world of Warcraft. A prince of Lordaeron,<br>
+                    he played a key role in the events of Warcraft III, becoming the<br> 
+                    champion of his people and then a fallen paladin and later the Lich King.<br> 
+                    His story is full of tragedy, strength and loss, leaving an indelible mark<br>
+                    on Azeroth's history.
+                </p>
+              </div>
+          </div>
+          <div class="col-md-6 custom-column">
+            <img src="img/jaina.jfif" alt="Image 2" class="custom-image">
+            <div class="custom-text">
+                <h1>Jaina Proudmoore</h1>
+                <p>
+                    powerful mage and leader of Stormgrad in the world of Warcraft. She was also a<br> 
+                    member of Kirin Thor and played a key role in many historical events. Jaina faced<br> 
+                    many hardships and losses, including breaking up with Arthas Menethil, who became<br> 
+                    the Lich King. Her character has evolved from a peace-loving mage to a determined<br> 
+                    leader ready to defend her people.
+                </p>
+            </div>
+          </div>
+          <div class="col-md-6 custom-column">
+            <img src="img/illidan.jpg" alt="Image 2" class="custom-image">
+            <div class="custom-text">
+                <h1>Illidan Stormrage</h1>
+                <p>
+                    one of the most complex characters in the Warcraft universe. An elven mage<br> 
+                    and paladin, he has fallen into temptation in his quest for power and<br> 
+                    forgotten magic. Illidan played a key role in the events of Warcraft III<br> 
+                    and World of Warcraft: The Burning Crusade. His actions are often controversial:<br> 
+                    on the one hand he is a traitor and villain, on the other he is a complex<br> 
+                    anti-hero who faces moral dilemmas.
+                </p>
+            </div>
+          </div>
+          <div class="col-md-6 custom-column">
+            <img src="img/malfurion.jpg" alt="Image 2" class="custom-image">
+            <div class="custom-text">
+                <h1>Malfurion Stormrage</h1>
+                <p>
+                    a prominent druid and one of the leaders of the Night Elven Nation in the World of Warcraft.<br> 
+                    Brother of Illidan and lover of Tyrande of the Whispering Wind, Malfurion played a key role in<br> 
+                    many historical events. He was the first Night Elf to become a druid, and wields immense powers of nature.<br> 
+                    His personal sacrifices and devotion to nature have made him one of the most revered characters<br> 
+                    in the World of Warcraft.
+                </p>
+            </div>
+          </div>
+          <div class="col-md-6 custom-column">
+            <img src="img/tyrand.jpg" alt="Image 2" class="custom-image">
+            <div class="custom-text">
+                <h1>Tyrande Whisperwind</h1>
+                <p>
+                    a prominent priestess of the moon and leader of the Night Elves in the Warcraft universe.<br> 
+                    She is the wife of Malfurion Stormrage and has played a key role in many events, including<br> 
+                    wars and conflicts in Azeroth. Tyrande is known for her wisdom, strength, and devotion to her<br> 
+                    people. Her determination and bravery have made her one of the most influential female characters<br> 
+                    in the World of Warcraft.
+                </p>
+            </div>
+          </div>
+          <div class="col-md-6 custom-column">
+            <img src="img/sylvanas.jpg" alt="Image 2" class="custom-image">
+            <div class="custom-text">
+                <h1>Sylvanas Windrunner</h1>
+                <p>
+                    a prominent elven leader, leader of the Night Elves and Queen of the Forests in World of Warcraft. She also<br> 
+                    became the Leader of the Horde after the events in World of Warcraft: Battle for Azeroth. Silvana is known<br> 
+                    for her complex personality, from her days as a High Elven Ranger to her transformation into a ne'er-do-well<br> 
+                    Banshee and leader of the Horde. Her determination, drive for survival, and difficult moral choices make her<br> 
+                    one of the most counter-versatile characters in World of Warcraft.
+                </p>
+            </div>
+          </div>
+          <div class="col-md-6 custom-column">
+            <img src="img/trall.jpg" alt="Image 2" class="custom-image">
+            <div class="custom-text">
+                <h1>Thrall, son of Durotan</h1>
+                <p>
+                    Thrall led his people out of the human camps and opened the way to freedom and prosperity. Now, led by Thrall,<br> 
+                    the New Horde has become one of the most powerful forces in Azeroth. Thrall is a shaman who always sees the deepest<br> 
+                    essence of the elements, these visions help him to make the right and most appropriate decisions in difficult situations.<br>
+                    He is the embodiment of the wisdom, valour, strength, bravery and goodness of the entire orc race.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="about-section">
+            <a href="index.html" class="navmain">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <p>This site has been created for introductory purposes only.</p>
+        </div>
+        <div class="contacts-section">
+            <h2>Contacts</h2>
+            <p>
+                toleugazyulyz@gmail.com<br>
+                +77051355379
+            </p>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="characters.js"></script>
+  </body>
+</html>

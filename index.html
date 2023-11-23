@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img\main.ico">
+    <title>Warcraft</title>
+</head>
+<body>
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeWelcomePopup()">&times;</span>
+            <h2>Welcome!</h2>
+            <p>We are glad to see you here. We hope you will find much of interest!</p>
+        </div>
+    </div>
+    <div class="navbar" id="myNavbar">
+    <a href="index.html" class="navmain">
+        <img src="img/navlogo.jpg" alt="Logo">
+        <strong>Warcraft</strong>
+    </a>
+    <a href="#story">Story</a>
+    <a href="characters.html">Characters</a>
+    <a href="https://worldofmapcraft.com/">World</a>
+    <div class="dropdown">
+      <button class="dropbtn">Fractions</button>
+      <div class="dropdown-content">
+        <a href="alliance.html">Alliance</a>
+        <a href="horde.html">Horde</a>
+      </div>
+    </div>
+    <a href="#">
+        <button onclick="document.getElementById('id01').style.display='block'" class="but1">Login</button>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img/lich.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                    <button type="submit">Login</button>
+                    <br>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container1" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="logo.html" style="vertical-align: middle;">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </a>
+    </div>
+  
+    <div class="VideoPane">
+        <video autoplay loop muted plays-inline>
+            <source src="img/video.mp4" type="video/mp4">
+        </video>   
+    </div>
+    <div id="content">
+        <h1><strong>Explore new worlds in an exciting game</strong></h1>
+        <p>
+            Welcome to our website dedicated to an exciting game where everyone can become<br>
+            the hero of their own unique adventure. Explore uncharted lands, fight powerful enemies,<br>
+            and create your own legend. On our site you will find everything you need to fully immerse<br>
+            yourself in the exciting world of the game.
+        </p>
+    </div>
+
+    <section id="story">
+        <div class="container-fluid" id="pic">
+            <div class="w1">
+                <img src="img/w12.jpg" alt="warcraft1 and 2">
+                <a type="button" class="btn btn-primary" href="https://wowwiki-archive.fandom.com/wiki/Warcraft:_Orcs_%26_Humans#:~:text=Set%20in%20the%20mythic%20kingdom,of%20the%20battle%20for%20Azeroth.">Read more</a>
+                <h1><strong>Beginning of everything</strong></h1>
+                <p>
+                    Warcraft I and II, the inaugural chapters of the iconic series,<br>
+                    introduced players to the epic conflict between the Alliance and Horde,<br>
+                    laying the groundwork for a gaming legacy known for strategic brilliance and<br>
+                    immersive storytelling.
+                </p>
+            </div>
+            <br>
+            <div class="w3">
+                <img src="img/w3.png" alt="warcraft3">
+                <a type="button" class="btn btn-primary" href="https://news.blizzard.com/en-us/warcraft3/23229617/warcraft-iii-the-story-so-far">Read more</a>
+                <h1><strong>Warcraft 3: A Fantasy Revolution</strong></h1>
+                <p>
+                    Warcraft 3 marked a revolutionary leap, blending real-time strategy with<br>
+                    hero-driven gameplay. Its rich narrative unfolded in the diverse lands of Azeroth,<br> 
+                    introducing iconic characters and forever shaping the gaming landscape with its<br> 
+                    innovative approach to strategy and storytelling.
+                </p>
+            </div>
+            <br>
+            <div class="wow">
+                <img src="img/wow.jpg" alt="WoW">
+                <a type="button" class="btn btn-primary" href="https://worldofwarcraft.blizzard.com/en-us/story">Read more</a>
+                <h1><strong>World of Warcraft: A Virtual Realm Unveiled</strong></h1>
+                <p>
+                    World of Warcraft, the MMO masterpiece, expanded the Warcraft universe into a living,<br> 
+                    breathing online realm. Players immersed themselves in Azeroth like never before,<br>
+                    forging alliances, battling mythical foes, and creating legends in a vibrant,<br> 
+                    persistent world that captivated millions worldwide.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <div class="ques">
+        <h3>STAY IN TOUCH!</h3>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Enter your email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="agree" name="agree" required onmouseover="myFunction()">
+                <label class="form-check-label" for="agree">You agree to the terms of use</label>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <div class="about-section">
+            <a href="index.html" class="navmain">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <p>This site has been created for introductory purposes only.</p>
+        </div>
+        <div class="contacts-section">
+            <h2>Contacts</h2>
+            <p>
+                toleugazyulyz@gmail.com<br>
+                +77051355379
+            </p>
+        </div>
+    </div>
+
+
+  
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>

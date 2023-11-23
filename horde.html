@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="horde.css">
+    <link rel="icon" href="img\horde.ico">
+    <title>Horde</title>
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="navmain">
+        <img src="img/navlogo.jpg" alt="Logo">
+        <strong>Warcraft</strong>
+    </a>
+    <a href="#story">Story</a>
+    <a href="characters.html">Characters</a>
+    <a href="https://worldofmapcraft.com/">World</a>
+    <div class="dropdown">
+      <button class="dropbtn">Fractions</button>
+      <div class="dropdown-content">
+        <a href="alliance.html">Alliance</a>
+        <a href="horde.html">Horde</a>
+      </div>
+    </div>
+    <a href="#">
+        <button onclick="document.getElementById('id01').style.display='block'" class="but1">Login</button>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img/lich.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                    <button type="submit">Login</button>
+                    <br>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container1" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="logo.html" style="vertical-align: middle;">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </a>
+    </div>
+
+    <div class="container">
+      <div class="text">
+        <h1>Horde</h1>
+        <p>
+          The Horde is another faction in World of Warcraft, consisting of a variety of races<br> 
+          such as Orcs, Trolls, Goblins, Undead, and Tauren. The Horde fights against the<br> 
+          Alliance for resources and influence in Azeroth. Its leaders include the Horde Leader<br> 
+          (such as Thrall or Vol'jin) and other influential characters. The Horde seeks the<br> 
+          survival and power of its members, and while they are often perceived as enemies, their<br> 
+          motivations have historically been complex and often tied to the survival of their nations.<br> 
+          The main capital of the Horde is Orgrimmar.
+        </p>
+      </div>
+      <div class="images">
+          <img src="img/horde.png" alt="Первое изображение">
+      </div>
+    </div>
+
+    <div class="races">
+      <h2>Major Races</h2>
+      <button class="accordion">Orcs</button>
+      <div class="panel">
+          <p>
+              <b>Homeland:</b> Drenor.<br>
+              <b>Leader:</b> Chief Silvana the Windswept (at the time of my last data was Thrall).<br>
+              <b>Features:</b> Strength and combat, clan traditions, close ties to shamanism.
+          </p>
+      </div>
+
+      <button class="accordion">Tauren</button>
+      <div class="panel">
+          <p>
+              <b>Homeland:</b> Mulgore.<br>
+              <b>Leader:</b> Chief Bane Bloody Spear.<br>
+              <b>Features:</b> Strength and endurance, connection with nature, peaceful lifestyle.
+          </p>
+      </div>
+
+      <button class="accordion">Trolls</button>
+      <div class="panel">
+          <p>
+              <b>Homeland:</b> Echo Alar.<br>
+              <b>Leader:</b> Chief Rokhan.<br>
+              <b>Features:</b> Fast and cunning, connection with spirits and voodoo, clan diversity.
+          </p>
+      </div>
+
+      <button class="accordion">Undead (Vile Elves)</button>
+      <div class="panel">
+          <p>
+              <b>Homeland:</b> Rotten Heart.<br>
+              <b>Leader:</b> Chief Lord Regent Lortemar Theron.<br>
+              <b>Features:</b> Undead, resurrected by Sylvanas Windwraith, dark magics, drive to survive.
+          </p>
+      </div>
+
+      <button class="accordion">Goblins:</button>
+      <div class="panel">
+          <p>
+              <b>Homeland:</b> Bilberis Trade Empire.<br>
+              <b>Leader:</b> Chief Gazzrill.<br>
+              <b>Features:</b> Ingenious technology, trade, love of profit.
+          </p>
+      </div>
+  </div>
+  <br>
+  <br>
+
+    <div class="footer">
+      <div class="about-section">
+          <a href="index.html" class="navmain">
+              <img src="img/logo.png" alt="Logo">
+          </a>
+          <p>This site has been created for introductory purposes only.</p>
+      </div>
+      <div class="contacts-section">
+          <h2>Contacts</h2>
+          <p>
+              toleugazyulyz@gmail.com<br>
+              +77051355379
+          </p>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="horde.js"></script>
+</body>
+</html>

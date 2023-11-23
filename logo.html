@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password?</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .moving {
+            position: absolute;
+            animation: moveLogo 5s infinite;
+        }
+
+        @keyframes moveLogo {
+            0%, 100% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 70vw;
+                top: 0;
+            }
+            50% {
+                left: 70vw;
+                top: 70vh;
+            }
+            75% {
+                left: 0;
+                top: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving">
+        <img id="logo" src="img/logo.png" alt="Logo">
+    </div>
+
+    <script>
+        const wowLogo = document.getElementById('logo');
+
+        function getRandomPosition() {
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            return { x, y };
+        }
+
+        function updateLogoPosition() {
+            const position = getRandomPosition();
+            wowLogo.style.left = `${position.x}px`;
+            wowLogo.style.top = `${position.y}px`;
+        }
+
+        updateLogoPosition();
+
+        wowLogo.addEventListener('animationiteration', updateLogoPosition);
+    </script>
+</body>
+</html>
+

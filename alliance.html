@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="alliance.css">
+    <link rel="icon" href="img\alliance.ico">
+    <title>Alliance</title>
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="navmain">
+        <img src="img/navlogo.jpg" alt="Logo">
+        <strong>Warcraft</strong>
+    </a>
+    <a href="#story">Story</a>
+    <a href="characters.html">Characters</a>
+    <a href="https://worldofmapcraft.com/">World</a>
+    <div class="dropdown">
+      <button class="dropbtn">Fractions</button>
+      <div class="dropdown-content">
+        <a href="alliance.html">Alliance</a>
+        <a href="horde.html">Horde</a>
+      </div>
+    </div>
+    <a href="#">
+        <button onclick="document.getElementById('id01').style.display='block'" class="but1">Login</button>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img/lich.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                    <button type="submit">Login</button>
+                    <br>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container1" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="logo.html" style="vertical-align: middle;">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </a>
+    </div>
+
+    <div class="container">
+      <div class="text">
+        <h1>Alliance</h1>
+        <p>
+          Alliance is one of the factions in the World of Warcraft.<br>
+          It is an alliance of different races, including humans, drenei,<br> 
+          night elves, dwarves, and others. The Alliance fights the Horde for<br> 
+          control of Azeroth. The Alliance's military leaders include King Anduin Vrig,<br> 
+          the head of the Drenei, Varian Vrek, and others. Their capital city is Stormgrad.<br> 
+          The faction is renowned for its pursuit of justice and the power of uniting different<br>
+          cultures to fight for peace.
+        </p>
+      </div>
+      <div class="images">
+          <img src="img/alliance.jpg" alt="Первое изображение">
+      </div>
+    </div>
+
+    <br>
+
+    <div class="races">
+        <h2>Major Races</h2>
+        <button class="accordion">Human</button>
+        <div class="panel">
+            <p>
+                <b>Kingdom:</b> Stormwind.<br>
+                <b>Leader:</b> King Anduin Vrig.<br>
+                <b>Features:</b> Talent for magic, desire for justice, varied classes from warriors to mages.
+            </p>
+        </div>
+
+        <button class="accordion">Night Elves</button>
+        <div class="panel">
+            <p>
+                <b>Kingdom:</b> Darnassus and Teldrassil.<br>
+                <b>Leader:</b> Tyrande Vek'nab.<br>
+                <b>Features:</b> Affinity for nature and moon magic, grace, strong ties to natural forces.
+            </p>
+        </div>
+
+        <button class="accordion">Drenaeus</button>
+        <div class="panel">
+            <p>
+                <b>Kingdom:</b> Exodar.<br>
+                <b>Leader:</b> Profet Velen.<br>
+                <b>Features:</b> Space magic, striving for bright ideals, refugees from the destroyed world of Drenor.
+            </p>
+        </div>
+
+        <button class="accordion">Dwarves</button>
+        <div class="panel">
+            <p>
+                <b>Main city:</b> Gnomregan.<br>
+                <b>Leader:</b> Gelbin Mekkatork.<br>
+                <b>Features:</b> Genius in technology and mechanics, small stature, passion for invention and experimentation.
+            </p>
+        </div>
+
+        <button class="accordion">Vorgen</button>
+        <div class="panel">
+            <p>
+                <b>Homeland:</b> Gilneas.<br>
+                <b>Leader:</b> General Liam Greymain.<br>
+                <b>Features:</b> Werewolf curse, transformation into a wolf, high speed and aggressive fighting style.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="footer">
+      <div class="about-section">
+          <a href="index.html" class="navmain">
+              <img src="img/logo.png" alt="Logo">
+          </a>
+          <p>This site has been created for introductory purposes only.</p>
+      </div>
+      <div class="contacts-section">
+          <h2>Contacts</h2>
+          <p>
+              toleugazyulyz@gmail.com<br>
+              +77051355379
+          </p>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="alliacne.js"></script>
+</body>
+</html>
